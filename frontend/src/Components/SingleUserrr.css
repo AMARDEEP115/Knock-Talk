@@ -1,0 +1,103 @@
+#Single{
+    border: 5px solid teal;
+    border-radius: 20px;
+    width: 40%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    gap:20px;
+    padding: 10px;
+    margin-top: 20px;
+}
+#Single>img{
+    width: 30%;
+    border-radius: 10px 0px 0px 10px;
+}
+#Single>div{
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    justify-content: space-between;
+    align-items: center;
+}
+#Single>div>div{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+#Single>div>p{
+    width: 60%;
+    font-size: 30px;
+    font-weight: 600;
+    color: teal;
+    height: 50px;
+    overflow-y: hidden;
+    width: 200px;
+}
+#Single>div>button{
+    width: 120px;
+}
+
+#Single>div>button:hover{
+    border-color: blue;
+    color: blue;
+    background-color: transparent;
+}
+#Single>div>div>button:hover{
+    border-color: blue;
+    color: blue;
+    background-color: transparent;
+}
+
+
+@media screen and (min-width:426px) and (max-width:770px){
+    #Single>img{
+        width: 20%;
+        border-radius: 10px 0px 0px 10px;
+    }
+    #Single{
+        width: 50%;
+        border: 4px solid teal;
+    }
+    #Single>div>p{
+        font-size: 20px;
+        height: 40px;
+    }
+    #Single>div button{
+        height: 30px;
+    }
+}
+@media screen and (min-width:300px) and (max-width:426px){
+    #Single{
+        width: 80%;
+        border: 3px solid teal;
+    }
+    #Single>div{
+        justify-content: space-between;
+    }
+    #Single>div>p{
+        font-size: 20px;
+        height: 30px;
+        width: 100px;
+    }
+    #Single>div button{
+        height: 35px;
+        width: 120px;
+    }
+}
+
+@media screen and (min-width:300px) and (max-width:582px){
+    #Single>div>div{
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+    #Single>div>div>button{
+        display: block;
+        margin: auto;
+        height: 30px;
+    }
+}

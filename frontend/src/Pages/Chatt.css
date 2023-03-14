@@ -1,0 +1,58 @@
+#ChatKT{
+    padding: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#ChatKT>div:first-child{
+    height: 100vh;
+    width: 30%;
+    border: 3px solid teal;
+    border-radius: 20px 0px 0px 20px;
+    padding: 5px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+#ChatKT>div:first-child::-webkit-scrollbar {
+    display: none;
+}
+#SecondChat{
+    height: 100vh;
+    border: 3px solid teal;
+    border-radius: 0px 20px 20px 0px;
+    width: 69%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+#SecondChat>div:first-child{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: end;
+    padding-bottom: 10px;
+    overflow-y: scroll;
+}
+#SecondChat>div:first-child::-webkit-scrollbar {
+    display: none;
+}
+
+#ThirdChat{
+    border: 3px solid teal;
+    border-radius: 0px 0px 20px 0px;
+    margin-bottom: -3px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-right: 2vw;
+}
+#ChatKT input{
+    width: 90%;
+    padding-left: 20px;
+    height: 43px;
+    color: teal;
+    font-weight: 700;
+    background-color: transparent;
+}

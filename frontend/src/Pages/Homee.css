@@ -1,0 +1,19 @@
+#Home{
+    padding-top: 30vh;
+}
+#Home>h2{
+    color: teal;
+    display: flex;
+    gap: 30px;
+    align-items: center;
+    justify-content: center;
+    width: 45vh;
+    margin: auto;
+    margin-top: 30px;
+}
+#Home>p{
+    text-align: center;
+    color: tomato;
+    font-weight: bolder;
+    font-size: 36px;
+}

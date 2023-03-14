@@ -1,0 +1,58 @@
+#Form{
+    width: 35%;
+    margin: auto;
+    margin-top: 5vh;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border-radius: 15px;
+    padding: 20px;
+    border: 2px solid teal;
+}
+#Form>form>p{
+    text-align: left;
+    margin-bottom: 15px;
+    margin-top: 15px;
+    font-weight: 700;
+    color: teal;
+    display: flex;
+    gap: 4px;
+    /* align-items: end; */
+}
+#Form>form>p>span{
+    color: teal;
+    font-weight: 400;
+    font-size: 10px;
+}
+#Form>form>input{
+    border: 1px solid teal;
+    border-radius: 7px;
+    display: block;
+    height: 40px;
+    padding-left: 20px;
+    color: teal;
+    font-weight: 600;
+    width: 100%;
+    background-color: transparent;
+}
+#Form>form>button{
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+#Form>p{
+    color: teal;
+}
+#Form>p>a{
+    color: blue;
+}
+
+@media screen and (min-width:426px) and (max-width:770px){
+    #Form{
+        width: 50%;
+        margin-top: 10px;
+    }
+}
+@media screen and (min-width:300px) and (max-width:425px){
+    #Form{
+        width: 90%;
+        margin-top: 10px;
+    }
+}

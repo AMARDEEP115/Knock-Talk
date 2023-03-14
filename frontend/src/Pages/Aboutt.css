@@ -1,0 +1,23 @@
+.AllP{
+    color: teal;
+    font-size: 2rem;
+    text-align: center;
+    margin-top: 7px;
+}
+#aBout a{
+    color: blue;
+}
+#LastP{
+    color: tomato;
+    font-size: 2rem;
+}
+
+@media screen and (min-width:318px) and (max-width:426px){
+    .AllP{
+        font-size: 1rem;
+    }
+    #LastP{
+        color: tomato;
+        font-size: 1rem;
+    }
+}

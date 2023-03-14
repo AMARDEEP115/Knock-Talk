@@ -1,0 +1,73 @@
+#Nav{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    font-weight: bold;
+    font-size: 28px;
+    color: white;
+    background-color: teal;
+    height: 55px;
+}
+
+#Nav>a:hover{
+    color: tomato;
+}
+
+#Dra{
+    display: none;
+}
+#xx{
+    text-decoration: none;
+    display: none;
+}
+
+#linkss{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    font-size: large;
+    font-weight: bold;
+    color: teal;
+}
+
+#Logout{
+    font-size: 29px;
+    font-weight: bold;
+    background-color: transparent;
+}
+#Logout:hover{
+    background-color: tomato;
+}
+
+@media screen and (max-width: 429px){
+    #Nav{
+        height: 55px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    #Nav>a{
+        display: none;
+    }
+    #Dra{
+        display: block;
+        margin-right: 10px;
+    }
+    #xx{
+        display: block;
+        margin-left: 20px;
+    }
+    #Logout{
+        display: none;
+    }
+    #LogoutD{
+        display: block;
+        font-size: 19px;
+        font-weight: bold;
+        background-color: transparent;
+        margin-left: -75%;
+    }
+    #LogoutD:hover{
+        background-color: tomato;
+    }
+}
