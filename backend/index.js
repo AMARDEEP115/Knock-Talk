@@ -33,6 +33,7 @@ app.use("/message",messageRouter);
 app.use(SocketMiddleware);
 
 io.on("connection",(socket)=>{
+    console.log("user connected");
     socket.on("userID",(data)=>{
         let check=activeUsers.filter((el)=>el.userID===data);
         if(check.length===1){
@@ -44,14 +45,20 @@ io.on("connection",(socket)=>{
         } else {
             activeUsers.push({userID:data,socketID:socket.id});
         }
+        console.log("all users connected");
         socket.emit("activeUsers",activeUsers);
     });
     socket.on("message",(msg)=>{
         let sendTo=activeUsers.filter((el)=>el.userID===msg.to);
-        socket.to(sendTo[0].socketID).emit("message",{messages:msg.message,from:msg.from});
+        console.log("message",msg);
+        console.log(sendTo);
+        if(sendTo.length>0){
+            socket.to(sendTo[0].socketID).emit("message",{messages:msg.message,from:msg.from});
+        }
     });
     socket.on("disconnect",(cc)=>{
         activeUsers=activeUsers.filter((el)=>el.socketID!==socket.id);
+        console.log("user disconnected");
         socket.emit("activeUsers",activeUsers);
     });
 });

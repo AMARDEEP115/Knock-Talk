@@ -30,7 +30,7 @@ messageRouter.post("/send", async(req, res) => {
     }
 });
 
-messageRouter.delete("/delete:id", async(req, res) => {
+messageRouter.delete("/delete/:id", async(req, res) => {
     let ID=req.params.id;
     try {
         await messageModel.findByIdAndDelete({_id:ID});
